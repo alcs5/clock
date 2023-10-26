@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="dist/script.js" defer></script>
+    <link rel="stylesheet" href="dist/styles.css">
+    <title>digital</title>
+</head>
+
+<body>
+
+    <!-- clock -->
+    <div class="clock">
+
+        <div class="topbar">
+
+            <div class="days">
+                <p id="days">Mon</p>
+                <p id="days">Tue</p>
+                <p id="days">Wed</p>
+                <p id="days">Thu</p>
+                <p id="days">Fri</p>
+                <p id="days">Sat</p>
+                <p id="days">Sun</p>
+            </div>
+
+            <div><span id="month"></span></div>
+
+        </div>
+
+        <div class="digital">
+            <p id="digital"></p>
+        </div>
+
+        <div class="alarm">
+            <input type="time" min="00:00" max="23:59" id="time">
+            <button id="alarmSet">set alarm</button>
+        </div>
+
+    </div>
+
+    <!-- cronometer -->
+    <div class="crono">
+
+        <div class="starting-time">
+            <p id="starting-time">00 : 00 : 00</p>
+        </div>
+
+        <div class="start-stop">
+            <button id="start">start</button>
+            <button id="stop">---</button>
+            <button id="restart">---</button>
+        </div>
+
+    </div>
+
+    <!-- timer -->
+    <div class="timer">
+        <div class="timer-set">
+            <p id="timer">00 : 00 : 00</p>
+        </div>
+
+
+        <div class="time-opt">
+            <input type="number" min="0" max="99" required>
+            <input type="number" min="0" max="59" required>
+            <input type="number" min="0" max="59" required>
+        </div>
+
+
+        <div class="timer-actions">
+            <button id="start-timer">start</button>
+            <button id="stop-timer">---</button>
+            <button id="restart-timer">---</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

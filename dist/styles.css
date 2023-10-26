@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  color: #0f0;
+}
+
+html, body {
+  min-height: 100vh;
+  position: relative;
+  background-color: #000;
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 0px;
+  width: 500px;
+  height: 200px;
+  background-color: transparent;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 2px solid #0f0;
+  border-radius: 0px;
+  padding: 10px;
+}
+.clock .topbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 80px;
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+}
+.clock .topbar .days {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+}
+.clock .topbar span {
+  color: #fff;
+}
+.clock .digital {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0px;
+  width: 100%;
+  height: 80px;
+  background-color: transparent;
+  font-size: 5rem;
+}
+.clock .alarm {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 40px;
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+}
+.clock .alarm button {
+  border: 2px solid #0f0;
+  border-radius: 2px;
+  background-color: transparent;
+  color: #fff;
+}
+.clock .alarm button:hover {
+  cursor: pointer;
+}
+.clock .alarm input {
+  border: 2px solid #0f0;
+  border-radius: 0px;
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+}
+
+.crono {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 50px;
+  width: 500px;
+  height: 200px;
+  background-color: transparent;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  border: 2px solid #0f0;
+  border-radius: 0px;
+  transform: translateX(-100%);
+  padding: 10px;
+  font-size: 4rem;
+}
+.crono .starting-time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0px;
+  width: 100%;
+  height: 75%;
+}
+.crono .start-stop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+  height: 25%;
+}
+.crono .start-stop button {
+  width: 33.33%;
+  height: 100%;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 0px;
+  color: #0f0;
+  cursor: pointer;
+  outline: none;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 0px;
+  width: 500px;
+  height: 200px;
+  background-color: transparent;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  border: 2px solid #0f0;
+  border-radius: 0px;
+  transform: translate(-50%, -75%);
+  padding: 10px;
+}
+.timer .timer-set {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0px;
+  width: 100%;
+  font-size: 4rem;
+}
+.timer .time-opt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+}
+.timer .time-opt input {
+  width: 25%;
+  height: 90%;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 0px;
+  outline: none;
+}
+.timer .time-opt input:invalid {
+  border: 2px solid #f00;
+  border-radius: 0px;
+}
+.timer .timer-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+}
+.timer .timer-actions button {
+  width: 33.33%;
+  height: 100%;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 0px;
+  color: #0f0;
+  cursor: pointer;
+  outline: none;
+}/*# sourceMappingURL=styles.css.map */

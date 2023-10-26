@@ -1,0 +1,24 @@
+@mixin flex($ai , $jc , $dir , $gap) {
+    display: flex;
+    align-items: $ai;
+    justify-content: $jc;
+    flex-direction: $dir;
+    gap: $gap;
+};
+
+@mixin size($w , $h , $color) {
+    width: $w;
+    height: $h;
+    background-color: $color;
+};
+
+@mixin border($w , $color , $radius) {
+    border: $w solid $color;
+    border-radius: $radius;
+};
+
+@mixin pos($top , $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+};
